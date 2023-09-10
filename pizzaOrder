@@ -1,0 +1,42 @@
+print("Welcome to pizza store")
+order = input("Enter What type of pizza you want: small(s) , medium (m) , large (l) \n")
+bill = 0
+
+# if order == 's':
+#     bill += 15
+#     ppr = input("Do you wanna add peporini? y/m \n")
+#     if ppr == 'y':
+#         bill += 2
+# if order == 'm':
+#     bill += 20
+#     ppr = input("Do you wanna add peporini? y/n \n")
+#     if ppr == 'y':
+#         bill += 3
+#
+# if order == 'l':
+#     bill += 25
+#     ppr = input("Do you wanna add peporini? y/n \n")
+#     if ppr == 'y':
+#         bill += 3
+# cheese = input("Do you wanna add cheeze y/n \n")
+# if cheese == 'y':
+#     bill += 1
+# print(f"Your total bill is ${bill}")
+
+# another method
+if order == 's':
+    bill += 15
+elif order == 'm':
+    bill += 20
+else :
+    bill += 25
+ppr = input("Do you wanna add peporini? y/n ")
+if ppr == 'y':
+    if order == 's':
+        bill += 2
+    else :
+        bill += 3
+cheese = input("do you wanna add cheese  y /n ")
+if cheese == 'y':
+    bill += 1
+print(f"YOur bill is ${bill} ")
